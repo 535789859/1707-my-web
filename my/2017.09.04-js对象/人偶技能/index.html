@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    div{
+        width: 190px;
+        height: 190px;
+        background: url(images/jian.png) no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+<body>
+<div id="div"></div>
+<script>
+    /**
+     * @param name 节点对象名字 id-string 
+     * @param x 开始坐标 number
+     * @param y 结束坐标 number
+     * @param xm 图片x轴长度 number
+     * @param ym 图片y轴长度 number
+     * @param jx 结束x的坐标 number
+     * @param jy 结束y的坐标 number
+     * @param num 图片的数量 number
+     * @constructor
+     */
+    function Game(name,x,y,xm,ym,jx,jy,num) {
+        this.name=name;
+        this.x=x;
+        this.y=y;
+        this.xm=xm;
+        this.ym=ym;
+        this.jx=jx;
+        this.xy=jy;
+        this.div = document.getElementById(this.name);
+        this.num=num;
+        this.n=0;
+        var self=this;
+        var timer = setInterval(function(){
+            self.n++;
+            self.x -= self.xm;
+            self.div.style.backgroundPosition = self.x + "px" + " " + self.y + "px";
+            if(self.x <= self.jx){
+                self.x = 0;
+                self.y -= self.ym;
+            }
+            if(self.y <= self.xy){
+                self.x = 0;
+                self.y = 0;
+            }
+            if (self.n >= self.num) {
+                clearInterval(timer);
+            }
+        }, 300);
+    }
+
+    var a=new Game("div",0,0,190,190,-760,-2000,9);
+    console.log(a);
+    console.log(a.name);
+
+
+</script>
+</body>
+</html>
