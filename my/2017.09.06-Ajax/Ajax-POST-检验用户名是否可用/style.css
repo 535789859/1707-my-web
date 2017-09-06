@@ -1,0 +1,9 @@
+span {
+    display: none;
+}
+.right {
+    color: green;
+}
+.error {
+    color: red;
+}

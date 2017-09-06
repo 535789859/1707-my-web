@@ -1,0 +1,15 @@
+li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
