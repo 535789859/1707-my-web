@@ -1,0 +1,1124 @@
+{
+	"owner": "39500",
+	"lastUpdatedBy": "39500",
+	"lastRevision": 1677536722,
+	"team": null,
+	"id": "3397e179-0968-5016-33fc-a94799d94ace",
+	"name": "良仓",
+	"description": "商品分类\n",
+	"folders_order": [],
+	"order": [
+		"e5370989-2a6b-8152-b4a5-0493daa8c905",
+		"3fce5a43-f874-4c10-d48a-e8a4952e98af",
+		"e7f00300-a30d-25ad-1ccb-bb18d3e4c69d",
+		"1c5b8f64-1a46-9420-cc40-c7d010624e20",
+		"953ede65-5200-7647-8981-d7dcd114dddc",
+		"8bbc3ef8-c20c-8e96-e80a-d68cfc29b8b8",
+		"7b8c41a6-10a5-ebee-e7c4-ef91791c9586",
+		"736ad96a-2df1-0d38-ad3f-bfc81df8611d",
+		"b49d436d-b298-fe1d-0600-fd2bb64250a5",
+		"f29bcced-7344-2f35-a66a-23f32f8939c1",
+		"0045b8c4-723a-9aa0-ebbf-54cd143f7ac6",
+		"e599410b-de63-dc44-357b-9509fd265a13",
+		"10e8049e-eae1-3dad-e482-874695b4419d"
+	],
+	"requests": [
+		{
+			"folder": null,
+			"id": "0045b8c4-723a-9aa0-ebbf-54cd143f7ac6",
+			"name": "获取购物车",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "token: 4ee33a188a65f514caf9560aaa230c98\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_cart.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536494,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_cart.php",
+						"headers": [
+							{
+								"key": "token",
+								"value": "6d6d14b2d8641f4c391f90e3b2bfb6c3",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "c0a323f5-ca8d-9128-c229-543fe4db884b",
+					"name": "获取购物车",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
+						"fromServer": true
+					},
+					"time": "223",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "90",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 May 2017 04:26:00 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":1,\"message\":\"\\u8d2d\\u7269\\u8f66\\u6570\\u636e\\u4e3a\\u7a7a\",\"data\":[]}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_cart.php\",\"headers\":[{\"key\":\"token\",\"value\":\"6d6d14b2d8641f4c391f90e3b2bfb6c3\",\"enabled\":true,\"disabled\":false}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "10e8049e-eae1-3dad-e482-874695b4419d",
+			"name": "更新购物车",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "goods_id",
+					"value": "34417",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "number",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "添加商品\n",
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: 4ee33a188a65f514caf9560aaa230c98\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_cart.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "1c5b8f64-1a46-9420-cc40-c7d010624e20",
+			"name": " 商品详情",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_goods.php?goods_id=36799",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "3fce5a43-f874-4c10-d48a-e8a4952e98af",
+			"name": "商品列表",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "classID",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "某一类商品 \n",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_goods.php?page=5&pagesize=10&cat_id=45",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "736ad96a-2df1-0d38-ad3f-bfc81df8611d",
+			"name": "注册",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "status",
+					"value": "register",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "123abc",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "12345678",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_user.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536497,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_user.php",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": false
+							}
+						],
+						"data": [
+							{
+								"key": "status",
+								"value": "register",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "username",
+								"value": "123abc",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "12345678",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					},
+					"id": "0e0fd885-8029-bba2-c524-0b1bb68ae2cd",
+					"name": "注册成功",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"fromServer": true
+					},
+					"time": "261",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Mar 2017 09:55:57 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"name": "Vary",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":0,\"message\":\"\\u6ce8\\u518c\\u6210\\u529f\",\"data\":[]}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_user.php\",\"headers\":[{\"key\":\"Content-Type\",\"name\":\"Content-Type\",\"value\":\"application/x-www-form-urlencoded\",\"disabled\":false}],\"data\":[{\"key\":\"status\",\"value\":\"register\",\"type\":\"text\",\"enabled\":true},{\"key\":\"username\",\"value\":\"123abc\",\"type\":\"text\",\"enabled\":true},{\"key\":\"password\",\"value\":\"12345678\",\"type\":\"text\",\"enabled\":true},{\"key\":\"\",\"value\":\"\",\"type\":\"text\",\"enabled\":true}],\"method\":\"POST\",\"dataMode\":\"params\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "7b8c41a6-10a5-ebee-e7c4-ef91791c9586",
+			"name": "获取广告",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_ad.php?position_id=1",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "8bbc3ef8-c20c-8e96-e80a-d68cfc29b8b8",
+			"name": "获取广告位",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_position.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "953ede65-5200-7647-8981-d7dcd114dddc",
+			"name": "搜索商品",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_goods.php?search_text=本&page=1&pagesize=12",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "b49d436d-b298-fe1d-0600-fd2bb64250a5",
+			"name": "登录",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "status",
+					"value": "login",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "123abc",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "12345678",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_user.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536502,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_user.php",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": [
+							{
+								"key": "status",
+								"value": "login",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "username",
+								"value": "hss",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "123456",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "urlencoded"
+					},
+					"id": "c7962c65-e152-4998-46db-d5c9ffde3840",
+					"name": "登入成功",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"fromServer": true
+					},
+					"time": "282",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "143",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Mar 2017 10:24:32 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":0,\"message\":\"\\u767b\\u5f55\\u6210\\u529f\",\"data\":{\"username\":\"hss\",\"avatar\":\"default.png\",\"user_id\":144,\"token\":\"5b198c2219c193755ff48bbd74721993\"}}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_user.php\",\"headers\":[{\"key\":\"Content-Type\",\"value\":\"application/x-www-form-urlencoded\",\"enabled\":true,\"description\":\"The mime type of this content\",\"disabled\":false}],\"data\":[{\"key\":\"status\",\"value\":\"login\",\"type\":\"text\",\"enabled\":true},{\"key\":\"username\",\"value\":\"hss\",\"type\":\"text\",\"enabled\":true},{\"key\":\"password\",\"value\":\"123456\",\"type\":\"text\",\"enabled\":true}],\"method\":\"POST\",\"dataMode\":\"urlencoded\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "e5370989-2a6b-8152-b4a5-0493daa8c905",
+			"name": "商品分类",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "classID",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "商品分类\n",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_cat.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536496,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_cat.php",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": [
+							{
+								"key": "classID",
+								"value": "2",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "GET",
+						"dataMode": "urlencoded"
+					},
+					"id": "37efa7f6-410c-d43f-a73d-eecfd48f18bf",
+					"name": "商品分类",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"fromServer": true
+					},
+					"time": "170",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "272",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2017 05:24:33 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":0,\"message\":\"\\u5546\\u54c1\\u5206\\u7c7b\\u6570\\u636e\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"cat_id\":\"45\",\"cat_name\":\"\\u5bb6\\u5c45\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"55\",\"cat_name\":\"\\u5bb6\\u5177\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"62\",\"cat_name\":\"\\u6587\\u5177\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"69\",\"cat_name\":\"\\u6570\\u7801\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"77\",\"cat_name\":\"\\u73a9\\u4e50\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"82\",\"cat_name\":\"\\u53a8\\u536b\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"92\",\"cat_name\":\"\\u7f8e\\u98df\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"101\",\"cat_name\":\"\\u7537\\u88c5\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"112\",\"cat_name\":\"\\u5973\\u88c5\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"},{\"cat_id\":\"125\",\"cat_name\":\"\\u7ae5\\u88c5\",\"cat_desc\":\" \",\"icon\":\" \",\"sort_order\":\"50\",\"parent_id\":\"0\",\"is_show\":\"1\",\"site_id\":\"0\"}]}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_cat.php\",\"headers\":[{\"key\":\"Content-Type\",\"value\":\"application/x-www-form-urlencoded\",\"enabled\":true,\"description\":\"The mime type of this content\",\"disabled\":false}],\"data\":[{\"key\":\"classID\",\"value\":\"2\",\"type\":\"text\",\"enabled\":true}],\"method\":\"GET\",\"dataMode\":\"urlencoded\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "e599410b-de63-dc44-357b-9509fd265a13",
+			"name": "查看订单",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "token: 5b198c2219c193755ff48bbd74721993\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_order.php",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536503,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_order.php",
+						"headers": [
+							{
+								"key": "token",
+								"value": "5b198c2219c193755ff48bbd74721993",
+								"type": "text",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "f9e51f22-dea2-ca7b-9cce-b6fbf14a2f03",
+					"name": "查看订单数据数据为空",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"fromServer": true
+					},
+					"time": "182",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "95",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Mar 2017 10:34:10 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":1,\"message\":\"\\u67e5\\u770b\\u8ba2\\u5355\\u6570\\u636e\\u6570\\u636e\\u4e3a\\u7a7a\",\"data\":[]}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_order.php\",\"headers\":[{\"key\":\"token\",\"value\":\"5b198c2219c193755ff48bbd74721993\",\"type\":\"text\",\"enabled\":true,\"disabled\":false}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "e7f00300-a30d-25ad-1ccb-bb18d3e4c69d",
+			"name": "  热门商品",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_goods.php?page=3&pagesize=10",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace"
+		},
+		{
+			"folder": null,
+			"id": "f29bcced-7344-2f35-a66a-23f32f8939c1",
+			"name": "获取用户信息",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "token: 072943c9d9f27a291b700f41b40c931d\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://h6.duchengjiu.top/shop/api_userinfo.php?status=info&username=123abc",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": null,
+			"headerData": null,
+			"pathVariableData": null,
+			"collectionId": "3397e179-0968-5016-33fc-a94799d94ace",
+			"responses": [
+				{
+					"owner": "39500",
+					"lastUpdatedBy": "39500",
+					"lastRevision": 1677536501,
+					"request": {
+						"url": "http://h6.duchengjiu.top/shop/api_userinfo.php?status=info&username=hss",
+						"headers": [
+							{
+								"key": "token",
+								"value": "5b198c2219c193755ff48bbd74721993",
+								"type": "text",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "36bc5fff-0b1c-9983-2e69-07eabffbc607",
+					"name": "获取用户信息",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"fromServer": true
+					},
+					"time": "98",
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin,X-Requested-With,Content-Type,Accept,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST,GET,PUT,OPTIONS,DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Access-Control-Request-Methods",
+							"value": "GET,POST,PUT,DELETE,OPTIONS",
+							"name": "Access-Control-Request-Methods",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "130",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Mar 2017 10:28:00 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"code\":0,\"message\":\"\\u7528\\u6237\\u83b7\\u53d6\\u6210\\u529f\",\"data\":{\"username\":\"hss\",\"avatar\":\"default.png\",\"user_id\":144,\"token\":\"\"}}",
+					"language": "html",
+					"rawDataType": null,
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "text",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"http://h6.duchengjiu.top/shop/api_userinfo.php?status=info&username=hss\",\"headers\":[{\"key\":\"token\",\"value\":\"5b198c2219c193755ff48bbd74721993\",\"type\":\"text\",\"enabled\":true,\"disabled\":false}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2017-06-15T13:29:57.000Z",
+					"updatedAt": "2017-06-15T13:29:58.000Z",
+					"write": true
+				}
+			]
+		}
+	]
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/indexStyle/style.css">
+    <script src="javaScript/ajax/ajax.js"></script>
+    <script src="javaScript/content/content.js"></script>
 </head>
 <body>
 
@@ -14,13 +16,38 @@
         </div>
         <div class="container-right">
             <ul>
-                <li><a href="">购物车</a></li>
-                <li><a href="">注册</a></li>
-                <li><a href="">登录</a></li>
+                <li><a href="">我的地址</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="html/login/login.html">登录</a><span>/</span><a href="html/register/register.html">注册</a></li>
             </ul>
         </div>
     </div>
 </header>
 
+<div id="search">
+    <div class="search-container">
+        <div class="container-center">
+            <input type="text" id="searchInput">
+            <label for="searchInput" id="labelInput"><a href="#content">搜索</a></label>
+        </div>
+    </div>
+</div>
+
+<div id="nav">
+    <div class="nav-container">
+        <ul></ul>
+    </div>
+</div>
+
+<div id="content">
+    <div class="content-container">
+        <ul></ul>
+    </div>
+</div>
+
+<script src="javaScript/nav/nav.js"></script>
+<script src="javaScript/search/search.js"></script>
+<script src="javaScript/index/main.js"></script>
 </body>
 </html>
