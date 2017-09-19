@@ -23,6 +23,8 @@
                     }
                 })(i);
                 myajax.get("http://h6.duchengjiu.top/shop/api_goods.php",{cat_id:""+data[i].cat_id+""},function (error,result) {
+                    var data=JSON.parse(result);
+                    console.log(data);
                     new LiContent(result);
                     new LiStyle();
                 })

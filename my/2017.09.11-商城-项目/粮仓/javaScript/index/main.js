@@ -22,12 +22,21 @@
 
     function shopTrolley() {
         var shop=document.querySelector(".header-container .container-right ul li:nth-child(2) a");
+        var order=document.querySelector(".header-container .container-right ul li:nth-child(3) a");
         console.log(shop);
         var token=localStorage.getItem("token");
         shop.onclick=function (e) {
             e.preventDefault();
             if(token){
                 tokenVerify(token,"html/trolley/trolley.html");
+            }else {
+                return window.location.href="html/login/login.html";
+            }
+        };
+        order.onclick=function (e) {
+            e.preventDefault();
+            if(token){
+                tokenVerify(token,"html/order/order.html");
             }else {
                 return window.location.href="html/login/login.html";
             }
