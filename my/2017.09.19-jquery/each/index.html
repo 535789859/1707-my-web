@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+    <style>
+        p {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px dashed #e4e4e4;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<script>
+    $("p").each(function (i,item) {
+        item.style.top=i*100+"px";
+        $(this).animate({"left":50*i},600);
+    })
+</script>
+</body>
+</html>

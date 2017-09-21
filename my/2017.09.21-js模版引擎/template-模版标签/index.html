@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<template id="temp">
+    <div>$name $money</div>
+</template>
+
+<script>
+    var data={
+        name:"asd",
+        money:"84313"
+    };
+    var template=document.querySelector("#temp").innerHTML;
+    function compile(template,data) {
+        return template.replace(/\$([a-zA-Z_]+)/g,function (macth,$1) {
+            return data[$1];
+        })
+    }
+    console.log(compile(template,data))
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    function fun(obj) {
+        console.log(obj)
+    }
+    var oScript=document.createElement("script");
+    oScript.src="http://h6.duchengjiu.top/shop/api_cat.php?format=jsonp&callback=fun"
+    document.body.appendChild(oScript);
+</script>
+</body>
+</html>
