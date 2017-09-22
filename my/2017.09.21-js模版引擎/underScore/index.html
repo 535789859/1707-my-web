@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span></span>
+<button>d</button>
+<script src="underscore.js"></script>
+<script>
+    var arr=[1,5,3,4,9,7,6,0];
+    Array.prototype.min=function () {
+        var min=this[0];
+        for(var i=1;i<this.length;i++){
+            if(this[i]<min){
+                min=this[i];
+            }
+        }
+        return min;
+    };
+    console.log(arr.min());
+    console.log(_.min(arr));//underscore
+
+
+    var button=document.querySelector("button");
+    var array=["asd","dss","saf","afa"];
+    button.onclick=function () {
+        var person=_.sample(array);
+        var span=document.querySelector("span");
+        span.innerHTML=person;
+        array=_.without(array,person);
+    }
+</script>
+</body>
+</html>
