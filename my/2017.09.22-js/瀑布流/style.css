@@ -1,0 +1,23 @@
+*{margin: 0;padding: 0;}
+html,body{ height: 100%;background-color: #d3d2d7;}
+.waterfall{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.grid{
+    position: absolute;
+    width: 250px;
+    background-color: white;
+}
+.grid img{
+    width: 230px;
+    margin: 10px;
+}
+.grid p{
+    width: 240px;
+    margin:0 10px 10px 10px;
+    text-align: center;
+    line-height: 16px;
+}
