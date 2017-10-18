@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<video id="video1" src="../mov_bbb%20(1).mp4" controls="controls"></video>
+
+<!--<img id="scream" src="../img_the_scream.jpg" alt="">-->
+
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<!--<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    var img=document.getElementById("scream");
+    ctx.drawImage(img,90,130,50,60,10,10,50,60);
+</script>-->
+
+<script>
+    var v=document.getElementById("video1");
+    var c=document.getElementById("myCanvas");
+    ctx=c.getContext('2d');
+    v.addEventListener('play',function() {var i=window.setInterval(function() {ctx.drawImage(v,5,5,260,125)},20);},false);
+    v.addEventListener('pause',function() {window.clearInterval(i);},false);
+    v.addEventListener('ended',function() {clearInterval(i);},false);
+</script>
+</body>
+</html>
