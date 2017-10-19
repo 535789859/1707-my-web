@@ -1,0 +1,9 @@
+网站：http://www.expressjs.com.cn
+
+全局安装：npm install express-generator -g
+
+安装工程：express "mingzi"
+
+配置：npm install
+
+启动：npm start
