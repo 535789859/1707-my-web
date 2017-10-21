@@ -1,0 +1,11 @@
+1.开启两个cmd
+    启动：mongod
+    使用：mongo
+2.创建use
+    use name
+    db.student.insert({"name","max"},"age":10)
+3.导入数据(单独的命令)
+    mongoimport --db web1707 --collection student --drop --file db.json
+
+
+

@@ -1,0 +1,4 @@
+npm init -y
+express .
+npm i
+npm i -S mongoose
