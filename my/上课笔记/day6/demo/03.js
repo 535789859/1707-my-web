@@ -1,9 +1,9 @@
 var fs = require('fs');
 var gm = require('gm');
 
-gm('./danny.jpg')
+gm('./img.jpg')
     .resize(50, 50,"!")
-    .write('./danny2.jpg', function (err) {
+    .write('./img1.jpg', function (err) {
         if (err) {
             console.log(err);
         }

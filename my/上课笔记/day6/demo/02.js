@@ -13,12 +13,12 @@ app.set("view engine","ejs");
 app.use(express.static("./public"));
 
 //注册页面
-app.get("/regist",function(res,res,next){
+app.get("/regist",function(req,res,next){
     res.render("regist");
 });
 
 //登陆页面
-app.get("/login",function(res,res,next){
+app.get("/login",function(req,res,next){
     res.render("login");
 });
 
