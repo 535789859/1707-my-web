@@ -1,0 +1,93 @@
+{
+    "errors": [
+        
+    ],
+    "warnings": [
+        
+    ],
+    "version": "1.12.14",
+    "hash": "78a1946bd3fc7a1679ac",
+    "time": 46,
+    "publicPath": "",
+    "assetsByChunkName": {
+        "index": "index-d91e4bc5d2b14a655012.b.js"
+    },
+    "assets": [
+        {
+            "name": "index-d91e4bc5d2b14a655012.b.js",
+            "size": 1408,
+            "chunks": [
+                0
+            ],
+            "chunkNames": [
+                "index"
+            ],
+            "emitted": true
+        }
+    ],
+    "chunks": [
+        {
+            "id": 0,
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "extraAsync": false,
+            "size": 20,
+            "names": [
+                "index"
+            ],
+            "files": [
+                "index-d91e4bc5d2b14a655012.b.js"
+            ],
+            "hash": "d91e4bc5d2b14a655012",
+            "parents": [
+                
+            ],
+            "origins": [
+                {
+                    "moduleId": 0,
+                    "module": "/Users/nimojs/Documents/webpack-book/8-hash/index.js",
+                    "moduleIdentifier": "/Users/nimojs/Documents/webpack-book/8-hash/index.js",
+                    "moduleName": "./index.js",
+                    "loc": "",
+                    "name": "index",
+                    "reasons": [
+                        
+                    ]
+                }
+            ]
+        }
+    ],
+    "modules": [
+        {
+            "id": 0,
+            "identifier": "/Users/nimojs/Documents/webpack-book/8-hash/index.js",
+            "name": "./index.js",
+            "index": 0,
+            "index2": 0,
+            "size": 20,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                0
+            ],
+            "assets": [
+                
+            ],
+            "issuer": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "reasons": [
+                
+            ],
+            "source": "console.log('index')"
+        }
+    ],
+    "filteredModules": 0,
+    "children": [
+        
+    ]
+}

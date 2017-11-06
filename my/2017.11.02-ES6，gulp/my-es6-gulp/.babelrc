@@ -1,0 +1,6 @@
+/*
+*命令：cnpm i -D babel-preset-env
+*/
+{
+  "presets": ["env"]
+}

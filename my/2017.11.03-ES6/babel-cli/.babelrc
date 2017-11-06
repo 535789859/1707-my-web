@@ -1,0 +1,9 @@
+/*
+*$ npm i -D babel-cli
+*$ mkdir src lib
+*$ npm run build
+* npm i -D babel-preset-env
+*/
+{
+  "presets": ["env"]
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.1"
+  }
+}

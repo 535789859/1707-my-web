@@ -1,0 +1,1 @@
+"use strict";function test(){}function latest(){console.log(3.1415926535);var o={a:1};o.a=2,o.b=3,console.log(o)}console.log("hello es6"),test(),latest();

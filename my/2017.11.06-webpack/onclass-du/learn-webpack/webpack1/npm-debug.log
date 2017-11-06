@@ -1,0 +1,505 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData css-loader
+20 silly mapToRegistry name css-loader
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'css-loader',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'css-loader',
+23 silly mapToRegistry   name: 'css-loader',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/css-loader
+25 silly fetchNamedPackageData style-loader
+26 silly mapToRegistry name style-loader
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'style-loader',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'style-loader',
+29 silly mapToRegistry   name: 'style-loader',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/style-loader
+31 silly fetchNamedPackageData webpack
+32 silly mapToRegistry name webpack
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'webpack',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'webpack',
+35 silly mapToRegistry   name: 'webpack',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/webpack
+37 silly fetchNamedPackageData webpack-dev-server
+38 silly mapToRegistry name webpack-dev-server
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'webpack-dev-server',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'webpack-dev-server',
+41 silly mapToRegistry   name: 'webpack-dev-server',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+43 verbose request uri https://registry.npmjs.org/style-loader
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 09:58:08
+46 verbose request id 378c4fcb70f8ae8d
+47 http request GET https://registry.npmjs.org/style-loader
+48 verbose request uri https://registry.npmjs.org/webpack-dev-server
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 09:58:08
+51 http request GET https://registry.npmjs.org/webpack-dev-server
+52 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+53 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+54 verbose request uri https://registry.npmjs.org/css-loader
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 09:58:08
+57 verbose etag W/"593fc527-1e021"
+58 verbose lastModified Tue, 13 Jun 2017 10:57:43 GMT
+59 http request GET https://registry.npmjs.org/css-loader
+60 verbose request uri https://registry.npmjs.org/webpack
+61 verbose request no auth needed
+62 info attempt registry request try #1 at 09:58:08
+63 verbose etag W/"594cbb8e-f6b4a"
+64 verbose lastModified Fri, 23 Jun 2017 06:56:14 GMT
+65 http request GET https://registry.npmjs.org/webpack
+66 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+67 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+68 info attempt registry request try #2 at 09:58:18
+69 http request GET https://registry.npmjs.org/style-loader
+70 info attempt registry request try #2 at 09:58:18
+71 http request GET https://registry.npmjs.org/webpack-dev-server
+72 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+73 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+74 info attempt registry request try #2 at 09:58:18
+75 verbose etag W/"593fc527-1e021"
+76 verbose lastModified Tue, 13 Jun 2017 10:57:43 GMT
+77 http request GET https://registry.npmjs.org/css-loader
+78 info attempt registry request try #2 at 09:58:18
+79 verbose etag W/"594cbb8e-f6b4a"
+80 verbose lastModified Fri, 23 Jun 2017 06:56:14 GMT
+81 http request GET https://registry.npmjs.org/webpack
+82 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+83 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+84 info attempt registry request try #3 at 09:59:18
+85 http request GET https://registry.npmjs.org/style-loader
+86 info attempt registry request try #3 at 09:59:18
+87 http request GET https://registry.npmjs.org/webpack-dev-server
+88 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+88 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+88 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+88 silly fetchPackageMetaData  error for style-loader@0.12.3 { Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+88 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+88 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+88 silly fetchPackageMetaData   code: 'ENOTFOUND',
+88 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+88 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+88 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+88 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+88 silly fetchPackageMetaData   port: 443 }
+89 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+89 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+89 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+89 silly fetchPackageMetaData  error for webpack-dev-server@1.10.1 { Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+89 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+89 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+89 silly fetchPackageMetaData   code: 'ENOTFOUND',
+89 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+89 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+89 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+89 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+89 silly fetchPackageMetaData   port: 443 }
+90 info attempt registry request try #3 at 09:59:18
+91 verbose etag W/"593fc527-1e021"
+92 verbose lastModified Tue, 13 Jun 2017 10:57:43 GMT
+93 http request GET https://registry.npmjs.org/css-loader
+94 info attempt registry request try #3 at 09:59:18
+95 verbose etag W/"594cbb8e-f6b4a"
+96 verbose lastModified Fri, 23 Jun 2017 06:56:14 GMT
+97 http request GET https://registry.npmjs.org/webpack
+98 silly get cb [ 304, undefined ]
+99 verbose etag https://registry.npmjs.org/webpack from cache
+100 verbose get saving webpack to /Users/maxwelldu/.npm/registry.npmjs.org/webpack/.cache.json
+101 verbose correctMkdir /Users/maxwelldu/.npm correctMkdir not in flight; initializing
+102 silly get cb [ 304, undefined ]
+103 verbose etag https://registry.npmjs.org/css-loader from cache
+104 verbose get saving css-loader to /Users/maxwelldu/.npm/registry.npmjs.org/css-loader/.cache.json
+105 verbose correctMkdir /Users/maxwelldu/.npm correctMkdir already in flight; waiting
+106 silly pickManifestFromRegistryMetadata spec 1.12.1 tag latest versions [ '0.1.0',
+106 silly pickManifestFromRegistryMetadata   '0.1.1',
+106 silly pickManifestFromRegistryMetadata   '0.1.2',
+106 silly pickManifestFromRegistryMetadata   '0.1.3',
+106 silly pickManifestFromRegistryMetadata   '0.1.4',
+106 silly pickManifestFromRegistryMetadata   '0.1.5',
+106 silly pickManifestFromRegistryMetadata   '0.1.6',
+106 silly pickManifestFromRegistryMetadata   '0.2.0',
+106 silly pickManifestFromRegistryMetadata   '0.2.1',
+106 silly pickManifestFromRegistryMetadata   '0.2.2',
+106 silly pickManifestFromRegistryMetadata   '0.2.3',
+106 silly pickManifestFromRegistryMetadata   '0.2.4',
+106 silly pickManifestFromRegistryMetadata   '0.2.6',
+106 silly pickManifestFromRegistryMetadata   '0.2.7',
+106 silly pickManifestFromRegistryMetadata   '0.2.8',
+106 silly pickManifestFromRegistryMetadata   '0.3.0',
+106 silly pickManifestFromRegistryMetadata   '0.3.1',
+106 silly pickManifestFromRegistryMetadata   '0.3.2',
+106 silly pickManifestFromRegistryMetadata   '0.3.3',
+106 silly pickManifestFromRegistryMetadata   '0.3.4',
+106 silly pickManifestFromRegistryMetadata   '0.3.6',
+106 silly pickManifestFromRegistryMetadata   '0.3.7',
+106 silly pickManifestFromRegistryMetadata   '0.3.8',
+106 silly pickManifestFromRegistryMetadata   '0.3.9',
+106 silly pickManifestFromRegistryMetadata   '0.3.10',
+106 silly pickManifestFromRegistryMetadata   '0.3.11',
+106 silly pickManifestFromRegistryMetadata   '0.3.12',
+106 silly pickManifestFromRegistryMetadata   '0.3.13',
+106 silly pickManifestFromRegistryMetadata   '0.3.14',
+106 silly pickManifestFromRegistryMetadata   '0.3.15',
+106 silly pickManifestFromRegistryMetadata   '0.3.16',
+106 silly pickManifestFromRegistryMetadata   '0.3.17',
+106 silly pickManifestFromRegistryMetadata   '0.3.18',
+106 silly pickManifestFromRegistryMetadata   '0.3.19',
+106 silly pickManifestFromRegistryMetadata   '0.3.20',
+106 silly pickManifestFromRegistryMetadata   '0.4.0',
+106 silly pickManifestFromRegistryMetadata   '0.4.1',
+106 silly pickManifestFromRegistryMetadata   '0.4.2',
+106 silly pickManifestFromRegistryMetadata   '0.4.3',
+106 silly pickManifestFromRegistryMetadata   '0.4.4',
+106 silly pickManifestFromRegistryMetadata   '0.4.5',
+106 silly pickManifestFromRegistryMetadata   '0.4.6',
+106 silly pickManifestFromRegistryMetadata   '0.4.7',
+106 silly pickManifestFromRegistryMetadata   '0.4.8',
+106 silly pickManifestFromRegistryMetadata   '0.4.9',
+106 silly pickManifestFromRegistryMetadata   '0.4.10',
+106 silly pickManifestFromRegistryMetadata   '0.4.11',
+106 silly pickManifestFromRegistryMetadata   '0.4.12',
+106 silly pickManifestFromRegistryMetadata   '0.4.13',
+106 silly pickManifestFromRegistryMetadata   '0.4.14',
+106 silly pickManifestFromRegistryMetadata   '0.4.15',
+106 silly pickManifestFromRegistryMetadata   '0.4.16',
+106 silly pickManifestFromRegistryMetadata   '0.4.17',
+106 silly pickManifestFromRegistryMetadata   '0.4.18',
+106 silly pickManifestFromRegistryMetadata   '0.4.19',
+106 silly pickManifestFromRegistryMetadata   '0.4.20',
+106 silly pickManifestFromRegistryMetadata   '0.4.21',
+106 silly pickManifestFromRegistryMetadata   '0.4.23',
+106 silly pickManifestFromRegistryMetadata   '0.4.24',
+106 silly pickManifestFromRegistryMetadata   '0.4.25',
+106 silly pickManifestFromRegistryMetadata   '0.5.0',
+106 silly pickManifestFromRegistryMetadata   '0.5.1',
+106 silly pickManifestFromRegistryMetadata   '0.5.2',
+106 silly pickManifestFromRegistryMetadata   '0.5.3',
+106 silly pickManifestFromRegistryMetadata   '0.5.4',
+106 silly pickManifestFromRegistryMetadata   '0.5.5',
+106 silly pickManifestFromRegistryMetadata   '0.5.6',
+106 silly pickManifestFromRegistryMetadata   '0.5.7',
+106 silly pickManifestFromRegistryMetadata   '0.5.8',
+106 silly pickManifestFromRegistryMetadata   '0.5.10',
+106 silly pickManifestFromRegistryMetadata   '0.6.0',
+106 silly pickManifestFromRegistryMetadata   '0.6.1',
+106 silly pickManifestFromRegistryMetadata   '0.6.2',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta2',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta3',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta4',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta5',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta6',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta7',
+106 silly pickManifestFromRegistryMetadata   '0.7.0-beta8',
+106 silly pickManifestFromRegistryMetadata   '0.7.0',
+106 silly pickManifestFromRegistryMetadata   '0.7.1',
+106 silly pickManifestFromRegistryMetadata   '0.7.2',
+106 silly pickManifestFromRegistryMetadata   '0.7.3',
+106 silly pickManifestFromRegistryMetadata   '0.7.4',
+106 silly pickManifestFromRegistryMetadata   '0.7.5',
+106 silly pickManifestFromRegistryMetadata   '0.7.6',
+106 silly pickManifestFromRegistryMetadata   '0.7.7',
+106 silly pickManifestFromRegistryMetadata   '0.7.8',
+106 silly pickManifestFromRegistryMetadata   '0.7.9',
+106 silly pickManifestFromRegistryMetadata   '0.7.11',
+106 silly pickManifestFromRegistryMetadata   '0.7.12',
+106 silly pickManifestFromRegistryMetadata   '0.7.13',
+106 silly pickManifestFromRegistryMetadata   '0.7.14',
+106 silly pickManifestFromRegistryMetadata   '0.7.15',
+106 silly pickManifestFromRegistryMetadata   '0.7.16',
+106 silly pickManifestFromRegistryMetadata   '0.7.17',
+106 silly pickManifestFromRegistryMetadata   '0.8.0-beta1',
+106 silly pickManifestFromRegistryMetadata   '0.8.0-beta2',
+106 silly pickManifestFromRegistryMetadata   ... 353 more items ]
+107 silly resolveWithNewModule webpack@1.12.1 checking installable status
+108 silly cache add args [ 'webpack@1.12.1', null ]
+109 verbose cache add spec webpack@1.12.1
+110 silly cache add parsed spec Result {
+110 silly cache add   raw: 'webpack@1.12.1',
+110 silly cache add   scope: null,
+110 silly cache add   escapedName: 'webpack',
+110 silly cache add   name: 'webpack',
+110 silly cache add   rawSpec: '1.12.1',
+110 silly cache add   spec: '1.12.1',
+110 silly cache add   type: 'version' }
+111 silly addNamed webpack@1.12.1
+112 verbose addNamed "1.12.1" is a plain semver version for webpack
+113 silly mapToRegistry name webpack
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'webpack',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   escapedName: 'webpack',
+116 silly mapToRegistry   name: 'webpack',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/webpack
+118 verbose addNameVersion registry:https://registry.npmjs.org/webpack not in flight; fetching
+119 silly pickManifestFromRegistryMetadata spec 0.18.0 tag latest versions [ '0.1.0',
+119 silly pickManifestFromRegistryMetadata   '0.1.1',
+119 silly pickManifestFromRegistryMetadata   '0.1.2',
+119 silly pickManifestFromRegistryMetadata   '0.2.0',
+119 silly pickManifestFromRegistryMetadata   '0.2.1',
+119 silly pickManifestFromRegistryMetadata   '0.2.2',
+119 silly pickManifestFromRegistryMetadata   '0.2.3',
+119 silly pickManifestFromRegistryMetadata   '0.2.4',
+119 silly pickManifestFromRegistryMetadata   '0.5.0',
+119 silly pickManifestFromRegistryMetadata   '0.5.1',
+119 silly pickManifestFromRegistryMetadata   '0.5.2',
+119 silly pickManifestFromRegistryMetadata   '0.6.0',
+119 silly pickManifestFromRegistryMetadata   '0.6.1',
+119 silly pickManifestFromRegistryMetadata   '0.6.2',
+119 silly pickManifestFromRegistryMetadata   '0.6.3',
+119 silly pickManifestFromRegistryMetadata   '0.6.4',
+119 silly pickManifestFromRegistryMetadata   '0.6.5',
+119 silly pickManifestFromRegistryMetadata   '0.6.6',
+119 silly pickManifestFromRegistryMetadata   '0.6.7',
+119 silly pickManifestFromRegistryMetadata   '0.6.8',
+119 silly pickManifestFromRegistryMetadata   '0.6.9',
+119 silly pickManifestFromRegistryMetadata   '0.6.10',
+119 silly pickManifestFromRegistryMetadata   '0.6.11',
+119 silly pickManifestFromRegistryMetadata   '0.6.12',
+119 silly pickManifestFromRegistryMetadata   '0.7.0',
+119 silly pickManifestFromRegistryMetadata   '0.7.1',
+119 silly pickManifestFromRegistryMetadata   '0.8.0',
+119 silly pickManifestFromRegistryMetadata   '0.9.0',
+119 silly pickManifestFromRegistryMetadata   '0.9.1',
+119 silly pickManifestFromRegistryMetadata   '0.10.0',
+119 silly pickManifestFromRegistryMetadata   '0.10.1',
+119 silly pickManifestFromRegistryMetadata   '0.11.0',
+119 silly pickManifestFromRegistryMetadata   '0.11.1',
+119 silly pickManifestFromRegistryMetadata   '0.11.2',
+119 silly pickManifestFromRegistryMetadata   '0.12.0',
+119 silly pickManifestFromRegistryMetadata   '0.12.1',
+119 silly pickManifestFromRegistryMetadata   '0.13.0',
+119 silly pickManifestFromRegistryMetadata   '0.13.1',
+119 silly pickManifestFromRegistryMetadata   '0.14.0',
+119 silly pickManifestFromRegistryMetadata   '0.14.1',
+119 silly pickManifestFromRegistryMetadata   '0.14.2',
+119 silly pickManifestFromRegistryMetadata   '0.14.3',
+119 silly pickManifestFromRegistryMetadata   '0.14.4',
+119 silly pickManifestFromRegistryMetadata   '0.14.5',
+119 silly pickManifestFromRegistryMetadata   '0.15.0',
+119 silly pickManifestFromRegistryMetadata   '0.15.1',
+119 silly pickManifestFromRegistryMetadata   '0.15.2',
+119 silly pickManifestFromRegistryMetadata   '0.15.3',
+119 silly pickManifestFromRegistryMetadata   '0.15.4',
+119 silly pickManifestFromRegistryMetadata   '0.15.5',
+119 silly pickManifestFromRegistryMetadata   '0.15.6',
+119 silly pickManifestFromRegistryMetadata   '0.16.0',
+119 silly pickManifestFromRegistryMetadata   '0.17.0',
+119 silly pickManifestFromRegistryMetadata   '0.18.0',
+119 silly pickManifestFromRegistryMetadata   '0.19.0',
+119 silly pickManifestFromRegistryMetadata   '0.20.0',
+119 silly pickManifestFromRegistryMetadata   '0.20.1',
+119 silly pickManifestFromRegistryMetadata   '0.20.2',
+119 silly pickManifestFromRegistryMetadata   '0.21.0',
+119 silly pickManifestFromRegistryMetadata   '0.22.0',
+119 silly pickManifestFromRegistryMetadata   '0.23.0',
+119 silly pickManifestFromRegistryMetadata   '0.23.1',
+119 silly pickManifestFromRegistryMetadata   '0.24.0',
+119 silly pickManifestFromRegistryMetadata   '0.25.0',
+119 silly pickManifestFromRegistryMetadata   '0.26.0',
+119 silly pickManifestFromRegistryMetadata   '0.26.1',
+119 silly pickManifestFromRegistryMetadata   '0.26.2',
+119 silly pickManifestFromRegistryMetadata   '0.26.4',
+119 silly pickManifestFromRegistryMetadata   '0.27.0',
+119 silly pickManifestFromRegistryMetadata   '0.27.1',
+119 silly pickManifestFromRegistryMetadata   '0.27.2',
+119 silly pickManifestFromRegistryMetadata   '0.27.3',
+119 silly pickManifestFromRegistryMetadata   '0.28.0',
+119 silly pickManifestFromRegistryMetadata   '0.28.1',
+119 silly pickManifestFromRegistryMetadata   '0.28.2',
+119 silly pickManifestFromRegistryMetadata   '0.28.3',
+119 silly pickManifestFromRegistryMetadata   '0.28.4' ]
+120 silly resolveWithNewModule css-loader@0.18.0 checking installable status
+121 silly cache add args [ 'css-loader@0.18.0', null ]
+122 verbose cache add spec css-loader@0.18.0
+123 silly cache add parsed spec Result {
+123 silly cache add   raw: 'css-loader@0.18.0',
+123 silly cache add   scope: null,
+123 silly cache add   escapedName: 'css-loader',
+123 silly cache add   name: 'css-loader',
+123 silly cache add   rawSpec: '0.18.0',
+123 silly cache add   spec: '0.18.0',
+123 silly cache add   type: 'version' }
+124 silly addNamed css-loader@0.18.0
+125 verbose addNamed "0.18.0" is a plain semver version for css-loader
+126 silly mapToRegistry name css-loader
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry data Result {
+129 silly mapToRegistry   raw: 'css-loader',
+129 silly mapToRegistry   scope: null,
+129 silly mapToRegistry   escapedName: 'css-loader',
+129 silly mapToRegistry   name: 'css-loader',
+129 silly mapToRegistry   rawSpec: '',
+129 silly mapToRegistry   spec: 'latest',
+129 silly mapToRegistry   type: 'tag' }
+130 silly mapToRegistry uri https://registry.npmjs.org/css-loader
+131 verbose addNameVersion registry:https://registry.npmjs.org/css-loader not in flight; fetching
+132 verbose get https://registry.npmjs.org/css-loader not expired, no request
+133 silly mapToRegistry name css-loader
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'css-loader',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   escapedName: 'css-loader',
+136 silly mapToRegistry   name: 'css-loader',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/css-loader
+138 verbose addRemoteTarball https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz not in flight; adding
+139 verbose addRemoteTarball [ 'https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz',
+139 verbose addRemoteTarball   'deecd9ad99bc47611e811b1c8cacc572e23ddad8' ]
+140 verbose get https://registry.npmjs.org/webpack not expired, no request
+141 silly mapToRegistry name webpack
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'webpack',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   escapedName: 'webpack',
+144 silly mapToRegistry   name: 'webpack',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/webpack
+146 verbose addRemoteTarball https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz not in flight; adding
+147 verbose addRemoteTarball [ 'https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz',
+147 verbose addRemoteTarball   '532f8cb8d9ac9694f030581531c84dec349bd6c0' ]
+148 info retry fetch attempt 1 at 09:59:19
+149 info attempt registry request try #1 at 09:59:19
+150 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+151 info retry fetch attempt 1 at 09:59:19
+152 info attempt registry request try #1 at 09:59:19
+153 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+154 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+155 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+156 info attempt registry request try #2 at 09:59:29
+157 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+158 info attempt registry request try #2 at 09:59:29
+159 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+160 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+161 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+162 info attempt registry request try #3 at 10:00:29
+163 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+164 info attempt registry request try #3 at 10:00:29
+165 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+166 error fetch failed https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+167 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+168 error fetch failed https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+169 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+170 info retry fetch attempt 2 at 10:00:39
+171 info attempt registry request try #1 at 10:00:39
+172 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+173 info retry fetch attempt 2 at 10:00:39
+174 info attempt registry request try #1 at 10:00:39
+175 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+176 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+177 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+178 info attempt registry request try #2 at 10:00:49
+179 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+180 info attempt registry request try #2 at 10:00:49
+181 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+182 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+183 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+184 info attempt registry request try #3 at 10:01:49
+185 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+186 info attempt registry request try #3 at 10:01:49
+187 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+188 error fetch failed https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+189 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+190 error fetch failed https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+191 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+192 info retry fetch attempt 3 at 10:02:49
+193 info attempt registry request try #1 at 10:02:49
+194 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+195 info retry fetch attempt 3 at 10:02:49
+196 info attempt registry request try #1 at 10:02:49
+197 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+198 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+199 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+200 info attempt registry request try #2 at 10:02:59
+201 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+202 info attempt registry request try #2 at 10:02:59
+203 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+204 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+205 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+206 info attempt registry request try #3 at 10:03:59
+207 http fetch GET https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+208 info attempt registry request try #3 at 10:03:59
+209 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+210 error fetch failed https://registry.npmjs.org/css-loader/-/css-loader-0.18.0.tgz
+211 error fetch failed https://registry.npmjs.org/webpack/-/webpack-1.12.1.tgz
+212 silly rollbackFailedOptional Starting
+213 silly rollbackFailedOptional Finishing
+214 silly runTopLevelLifecycles Finishing
+215 silly install printInstalled
+216 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+216 verbose stack     at errnoException (dns.js:28:10)
+216 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+217 verbose cwd /Users/maxwelldu/Documents/working/ucai/ucai_web/20-JavaScriptFramework(10 days)/learn-webpack/webpack1
+218 error Darwin 16.6.0
+219 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+220 error node v7.7.4
+221 error npm  v4.1.2
+222 error code ENOTFOUND
+223 error errno ENOTFOUND
+224 error syscall getaddrinfo
+225 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+226 error network This is most likely not a problem with npm itself
+226 error network and is related to network connectivity.
+226 error network In most cases you are behind a proxy or have bad network settings.
+226 error network
+226 error network If you are behind a proxy, please make sure that the
+226 error network 'proxy' config is set properly.  See: 'npm help config'
+227 verbose exit [ 1, true ]
