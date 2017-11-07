@@ -7,14 +7,14 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
-    module: {
-        loaders: [
-            {
-                test: /\.css/,
-                loader: 'style-loader!css-loader'
-            }
-        ]
-    },
+    // module: {
+    //     loaders: [
+    //         {
+    //             test: /\.css/,
+    //             loader: 'style-loader!css-loader'
+    //         }
+    //     ]
+    // },
     plugins: [
         new UglifyJSPlugin()
     ],
@@ -22,4 +22,4 @@ module.exports = {
         publicPath: "/dist/",
         port: 3000
     }
-}
+};
