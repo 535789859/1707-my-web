@@ -1,0 +1,101 @@
+  588  cd 05-learn-git/
+  589  pwd
+  590  ls
+  591  pwd
+  592  ls
+  593  ls
+  594  ls
+  595  ls -la
+  596  git init
+  597  ls -la
+  598  ls
+  599  echo 1
+  600  echo 1 > index.html
+  601  cat index.html
+  602  echo 2 >> index.html
+  603  cat index.html
+  604  git status
+  605  git add index.html
+  606  git status
+  607  git rm --cached index.html
+  608  git status
+  609  history
+  610  git status
+  611  git add index.html
+  612  git status
+  613  git commit index.html -m '初始化index.html'
+  614  git status
+  615  history
+  616  git log
+  617  git diff 4c944b13a8d490e1d52a160148b463056334bec6
+  618  git status
+  619  echo 33 >> index.html
+  620  cat index.html
+  621  git status
+  622  git diff
+  623  git add .
+  624  git status
+  625  git commit
+  626  git log
+  627  history
+  628  pwd
+  629  ls
+  630  echo 44 >> index.html
+  631  cat index.html
+  632  git status
+  633  git status -s
+  634  git diff
+  635  vim index.html
+  636  git diff
+  637  vim index.html
+  638  git diff
+  639  git status
+  640  git add index.html
+  641  git status
+  642  git commit -m '删除了2，添加了44'
+  643  git log
+  644  git status
+  645  git diff
+  646  git diff HEAD
+  647  git diff --cached
+  648  history
+  649  echo 55 >> index.html
+  650  git diff
+  651  git diff HEAD
+  652  git status
+  653  git add .
+  654  git diff
+  655  git diff HEAD
+  656  git diff --cached
+  657  git status
+  658  git diff
+  659  git reset HEAD index.html
+  660  git diff
+  661  git status
+  662  git checkout index.html
+  663  git diff
+  664  cat index.html
+  665  history
+  666  git log
+  667  git log --oneline
+  668  git log --graph
+  669  git reset --hard HEAD^
+  670  cat index.html
+  671  git reset --hard eb71de5
+  672  cat index.html
+  673  history
+  674  ls ~/
+  675  ls ~/his*
+  676  ls ~/.hi*
+  677  ls ~/
+  678  git reflog
+  679  clear
+  680  history
+
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+放弃这次合并: git merge --abort
