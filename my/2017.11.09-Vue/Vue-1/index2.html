@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{message}}
+    <div v-html="h"></div>
+    <div v-bind:id="message">属性</div>
+    <button v-bind:disabled="disabled">按钮</button>
+    {{number+1}}
+    {{ ok ? "yes" : "no"}}
+    {{message.split("").reverse().join()}}
+
+    <a v-bind:href="url">百度</a>
+    <a :href="url">百度</a>
+    <a v-on:click="doSomeThing">点击</a>
+    <a @click="doSomeThing">点击</a>
+
+    <!--prevent 修饰符告诉 v-on 指令对于触发的事件调用 event.preventDefault()-->
+    <form v-on:submit.prevent="onSubmit">
+        <input type="submit">
+    </form>
+</div>
+
+<script>
+    let data={
+        message:"hi vue",
+        h:"<h1>Hello</h1>",
+        disabled:false,
+        number:1,
+        ok:true,
+        url:"http://www.baidu.com"
+    };
+
+    let app=new Vue({
+        el: "#app",
+        data: data,
+        methods:{
+            doSomeThing(){
+                console.log("1")
+            },
+            onSubmit(){
+                console.log("submit")
+            }
+        }
+    })
+</script>
+</body>
+</html>

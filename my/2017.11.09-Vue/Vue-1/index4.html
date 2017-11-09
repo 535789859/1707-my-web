@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+    }
+    .active{border: 1px solid red}
+    .text-danger{color: red}
+</style>
+
+<body>
+
+<div id="app">
+    <div :class="{ active:isActive }">信息</div>
+    <div :class="{ active:isActive,'text-danger':hasError }">信息</div>
+    <div :class="classObject">错误信息</div>
+    <div :class="[activeClass,errorClass]">数组类型样式</div>
+</div>
+
+<script>
+    let vm=new Vue({
+        el:"#app",
+        data:{
+            isActive:true,
+            hasError:true,
+            classObject:{
+                active:true,
+                'text-danger':true
+            },
+            activeClass:"active",
+            errorClass:"text-danger"
+        }
+    })
+</script>
+</body>
+</html>

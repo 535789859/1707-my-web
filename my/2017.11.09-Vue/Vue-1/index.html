@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <p v-if="seen">你看不到我</p>
+    <p v-show="seen">display:none</p>
+    <span v-bind:title="message">提示</span>
+    {{message}}
+
+    <ul>
+        <li v-for="item in list">{{item.text}}</li>
+    </ul>
+    <ul>
+        <li v-for="(item,index) in list">{{index}}:{{item.text}}</li>
+    </ul>
+
+    <button v-on:click="reverseMessage">旋转message</button>
+
+    <input type="text" v-model="message">
+</div>
+
+<script>
+    let data={
+        message:"hello",
+        seen:false,
+        list:[
+            {text:"1"},
+            {text:"2"},
+            {text:"3"},
+            {text:"4"},
+            {text:"5"}
+        ]
+    };
+    let app=new Vue({
+        el:"#app",
+        data,
+        methods:{
+            reverseMessage(){
+                this.message=this.message.split("").reverse().join("");
+            }
+        }
+    });
+    app.message="hello vue"
+</script>
+</body>
+</html>

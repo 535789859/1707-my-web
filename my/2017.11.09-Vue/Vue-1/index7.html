@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    点击了{{counter}}次
+    <button @click="counter++">+1</button>
+    <button @click="addCounter">+1</button>
+    <button @click="add(3)">+3</button>
+    <button @click="add(5)">+5</button>
+    <button @click="addWithEvent(5,$event)">+5</button>
+</div>
+<div id="app2">
+    <div @click="doing">aaa
+        <a @click.stop="doThis">阻止冒泡</a>
+    </div>
+
+    <form @submit.prevent="onSubmit">
+        <input type="submit">
+    </form>
+
+    <a @click.stop.prevent="onThat">阻止默认行为</a>
+
+    <div @click.capture="doThis">在捕获阶段执行</div>
+<!--只有点击自己-->
+    <div @click.self="doThat">
+        自己
+        <div>子元素</div>
+    </div>
+</div>
+
+
+<div id="app3">
+    <input @keyup.13="submit" value="回车提交">
+    <input @keyup.enter="submit" value="回车提交">
+    <input @keydown.tab.prevent="submit" value="tab">
+    <input @keyup.delete="submit" value="delete">
+    <input @keyup.esc="submit" value="esc">
+    <input @keyup.space="submit" value="space">
+    <input @keyup.up="submit" value="up">
+    <input @keyup.down="submit" value="downp">
+    <input @keyup.left="submit" value="left">
+    <input @keyup.right="submit" value="right">
+    <input @keydown.f1.prevent="submit" value="f1">
+    <input @keyup.alt.67="submit" value="alt+c">
+    <input @keyup.shift.67="submit" value="shift+c">
+    <input @keyup.ctrl.86="submit" value="ctrl+v">
+
+</div>
+
+<script>
+    let vm=new Vue({
+        el:"#app",
+        data:{
+            counter:1
+        },
+        methods:{
+            addCounter(){
+                this.counter++;
+                console.log(event.target.tagName);
+            },
+            add(num){
+                this.counter+=num
+            },
+            addWithEvent(num,event){
+                this.counter+=num;
+                console.log(event.target.tagName);
+            }
+        }
+    });
+    let vm2=new Vue({
+        el:"#app2",
+        data:{},
+        methods:{
+            doing(){console.log("父div doing")},
+            doThis(){console.log("阻止冒泡")},
+            onSubmit(){console.log("onSubmit")},
+            onThat(){console.log("阻止默认行为")},
+            doThis(){console.log("在捕获阶段执行")},
+            doThat(){console.log("只有点击自己")}
+        }
+    });
+
+    let vm3=new Vue({
+        el:"#app3",
+        methods:{
+            submit(){
+                console.log("提交");
+            }
+        }
+    })
+</script>
+</body>
+</html>
