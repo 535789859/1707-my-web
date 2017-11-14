@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <child message="hello" :my-message="parentMessage"></child>
+    <input type="text" v-model="parentMessage">
+</div>
+
+<script>
+    let Child={
+        template:"<span>{{message}}{{myMessage}}</span>",
+        //声明当前组件内部能够接受一个message额属性
+        props:["message","myMessage"]
+    };
+    new Vue({
+        el:"#app",
+        data:{
+            parentMessage:" world"
+        },
+        components:{
+            Child
+        }
+    })
+</script>
+</body>
+</html>

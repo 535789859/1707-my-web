@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <child1></child1>
+    <child2></child2>
+    <child3></child3>
+</div>
+
+<script>
+    let Son1={
+        template:"<div>son</div>"
+    };
+    let Son2={
+        template:"<div>son</div>"
+    };
+    let Son3={
+        template:"<div>son</div>"
+    };
+    let Child1={
+        template:"<div>child<son1></son1></div>",
+        components:{
+            Son1
+        }
+    };
+    let Child2={
+        template:"<div>child<son1></son1><son2></son2></div>",
+        components:{
+            Son1,
+            Son2
+        }
+    };
+    let Child3={
+        template:"<div>child<son1></son1><son2></son2><son3></son3></div>",
+        components:{
+            Son1,
+            Son2,
+            Son3
+        }
+    };
+    new Vue({
+        el:"#app",
+        components:{
+            Child1,
+            Child2,
+            Child3
+        }
+    })
+</script>
+</body>
+</html>

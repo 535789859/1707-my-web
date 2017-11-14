@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <child :todos="todos"></child>
+</div>
+
+<script>
+    let Child={
+        template:"<ul><li v-for='todo in todos'>{{todo}}</li></ul>",
+        //声明当前组件内部能够接受一个message额属性
+        props:["todos"]
+    };
+    new Vue({
+        el:"#app",
+        data:{
+            todos:[
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        components:{
+            Child
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <child :init-counter="counter"></child>
+    <div>{{counter}}</div>
+</div>
+
+<script>
+    let Child={
+        template:"<div @click='childCouter++'>{{initCounter}}{{childCouter}}</div>",
+        props:["initCounter"],
+        data(){
+            return{
+                childCouter:this.initCounter
+            }
+        }
+    };
+    new Vue({
+        el:"#app",
+        data:{
+            counter:0
+        },
+        components:{
+            Child
+        }
+    })
+</script>
+</body>
+</html>

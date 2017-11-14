@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style>
+        .app-main{color: red}
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <app-head></app-head>
+    <app-main></app-main>
+    <app-side></app-side>
+</div>
+
+<script>
+    let AppHead={
+        template:"<div class='app-head'>1</div>"
+    };
+    let AppMainUnit={
+        template:"<div class='app-main-unit'>2</div>"
+        }
+    ;
+    let AppMain={
+        template:"<div class='app-main'>1<app-main-unit></app-main-unit></app-main-unit></div>",
+        components:{
+            AppMainUnit
+        }
+    };
+    let AppSide={
+        template:"<div class='app-side'>1</div>",
+        components:{}
+    };
+    new Vue({
+        el:"#app",
+        components:{
+            AppHead,
+            AppMain,
+            AppSide
+        }
+    })
+</script>
+</body>
+</html>
