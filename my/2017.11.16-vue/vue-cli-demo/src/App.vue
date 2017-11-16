@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import SideMenu from './components/SideMenu1.vue'
+import SideMenu from './components/SideMenu1'
 import bus from './bus'
 export default {
   name: 'app',

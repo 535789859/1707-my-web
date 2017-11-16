@@ -1,6 +1,6 @@
 <template lang="html">
   <header>
-    <i class-icon-reorder @click="showSide"></i>
+    <i class="icon-reorder" @click="showSide"></i>
     <slot></slot>
     <i class="icon-user"></i>
   </header>
