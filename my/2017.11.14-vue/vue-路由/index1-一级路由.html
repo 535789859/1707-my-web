@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <router-link to="/news">新闻管理</router-link>
+    <router-link to="/shop">商城管理</router-link>
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let NewsComponent={template:"<div>新闻</div>"};
+    let ShopComponent={template:"<div>商城</div>"};
+    let NotFoundComponent={template:"<div>404</div>"};
+
+    const routes=[
+        {path:"/",redirect:"/news"},
+        {path:"/news",component:NewsComponent},
+        {path:"/shop",component:ShopComponent},
+        {path:"*",component:NotFoundComponent},
+    ];
+    const router=new VueRouter({
+        routes
+    });
+
+    const app=new Vue({
+//        el:"#app",
+        router
+    }).$mount("#app");
+</script>
+</body>
+</html>

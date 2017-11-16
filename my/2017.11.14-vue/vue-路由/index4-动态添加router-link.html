@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+<style>
+    li{float: left;margin-right: 5px;list-style: none;cursor: pointer}
+</style>
+<body>
+
+<div id="app">
+    <ul>
+        <router-link to="/">所有商品</router-link>
+        <router-link v-for="(cat,index) in cats" :to="'/cat/'+cat.cat_id" :key="'cat' + index" tag="li">{{cat.cat_name}}</router-link>
+    </ul>
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let Goods={
+        template:"<ul>" +
+        "<li v-for='(good,index) in goods'>" +
+        "<img :src='good.goods_thumb'>" +
+        "</li>" +
+        "</ul>",
+        watch:{
+            $route(to,from){
+                console.log(to.params.id);
+                console.log(from.params.id);
+                axios.get("http://h6.duchengjiu.top/shop/api_goods.php?cat_id="+to.params.id).then(res=>{
+                    this.goods=res.data.data;
+                    console.log(res)
+                });
+            }
+        },
+        data(){
+            return{
+                goods:[]
+            }
+        }
+    };
+
+    const router=new VueRouter({
+        routes:[
+            {path:"/cat/:id",component:Goods},
+        ]
+    });
+
+    const vm=new Vue({
+        router,
+        data:{
+            cats:[]
+        },
+        created(){
+            axios.get("http://h6.duchengjiu.top/shop/api_cat.php").then(res=>{
+                this.cats=res.data.data;
+            });
+        }
+    }).$mount("#app");
+</script>
+</body>
+</html>

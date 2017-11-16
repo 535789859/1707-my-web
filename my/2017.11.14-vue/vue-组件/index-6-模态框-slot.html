@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    #app{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .modal{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        background-color: black;
+    }
+    .modal-min{
+        width: 50%;
+        height: 50%;
+        background-color: aqua;
+        position: absolute;
+        top:25%;
+        left: 25%;
+    }
+    .modal-min button{
+        background-color: white;
+        border: none;
+        color: black;
+        float: right;
+    }
+</style>
+<body>
+
+<div id="app">
+    <button @click="registerOpenModal">登录</button>
+    <child v-show="registerShowModal" @close-modal="registerCloseModal">
+        <div slot="header">登录</div>
+        <form action="">
+            <label for="registeryhm">用户名:</label>
+            <input type="text" id="registeryhm"><br/>
+            <label for="registermm">密码:</label>
+            <input type="text" id="registermm"><br/>
+            <input type="submit">
+        </form>
+    </child>
+
+    <button @click="loginOpenModal">注册</button>
+    <child v-show="loginShowModal" @close-modal="loginCloseModal">
+        <div slot="header">注册</div>
+        <form action="">
+            <label for="loginyhm">用户名:</label>
+            <input type="text" id="loginyhm"><br/>
+            <label for="loginmm">密码:</label>
+            <input type="text" id="loginmm"><br/>
+            <input type="submit">
+        </form>
+    </child>
+</div>
+
+<script>
+    let Child={
+        template:"<div class='modal' @click.self='closeModal'>" +
+        "<div class='modal-min'><button @click='closeModal'>关闭</button>" +
+        "<slot name='header'></slot><slot></slot></div>" +
+        "</div>",
+        methods:{
+            closeModal(){
+                this.$emit("close-modal");
+            }
+        }
+    };
+
+    new Vue({
+        el:"#app",
+        data:{
+            registerShowModal:false,
+            loginShowModal:false
+        },
+        components:{
+            Child
+        },
+        methods:{
+            registerOpenModal(){
+                this.registerShowModal=true;
+            },
+            registerCloseModal(e){
+                this.registerShowModal=false;
+            },
+            loginOpenModal(){
+                this.loginShowModal=true;
+            },
+            loginCloseModal(e){
+                this.loginShowModal=false;
+            }
+        }
+    })
+</script>
+</body>
+</html>

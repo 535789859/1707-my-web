@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <app-head></app-head>
+    <app-body></app-body>
+</div>
+
+<script>
+    let bus=new Vue();
+    let AppHead={
+        template:"<button @click='add'>点击</button>",
+        methods:{
+            add(){
+                bus.$emit("change",5);
+            }
+        }
+    };
+    let AppBody={
+        template:"<div>{{counter}}</div>",
+        data(){
+            return{
+                counter:0
+            }
+        },
+        created(){
+            bus.$on("change",count=>{
+                this.counter+=count;
+            })
+        }
+    };
+
+    new Vue({
+        el:"#app",
+        components:{
+            AppHead,
+            AppBody
+        }
+    })
+</script>
+</body>
+</html>

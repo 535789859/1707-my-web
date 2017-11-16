@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2></h2>
+
+<script>
+    var oH2=document.querySelector("h2");
+    var obj={};
+    var initValue="hello";
+    Object.defineProperty(obj,"title",{
+        get(){
+            return initValue;
+        },
+        set(newValue){
+            initValue=newValue;
+            oH2.innerText=initValue;
+        }
+    });
+    console.log(obj.title);
+    obj.title="sss";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<!--slot插槽-->
+<div id="app">
+    <child>{{msg}}</child>
+    <!--1x-->
+</div>
+
+<script>
+    let Child={
+        template:"<div>1<slot></slot></div>"
+    };
+
+    new Vue({
+        el:"#app",
+        data:{
+            msg:"aa"
+        },
+        components:{
+            Child
+        }
+    })
+</script>
+</body>
+</html>

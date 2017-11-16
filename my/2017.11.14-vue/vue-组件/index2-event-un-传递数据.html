@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{total}}
+    <child @add-parent-totsl="addTotal"></child>
+    <child></child>
+</div>
+
+<script>
+    let Child={
+        template:"<button @click='addCounter'>{{counter}}</button>",
+        data(){
+            return{
+                counter:0
+            }
+        },
+        methods:{
+            addCounter(){
+                this.counter++;
+                this.$emit("add-parent-totsl",5)
+            }
+        }
+    };
+
+    new Vue({
+        el:"#app",
+        data:{
+            total:0
+        },
+        components:{
+            Child
+        },
+        methods:{
+            addTotal(a){
+                this.total+=a;
+            }
+        }
+    })
+</script>
+</body>
+</html>

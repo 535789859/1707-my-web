@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        padding: 10px;
+        background: gray;
+        color: white;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .router-link-active {
+        background: red;
+    }
+    div {
+        margin-top: 30px;
+    }
+</style>
+<body>
+
+<div id="app">
+    <router-link to="/news">新闻管理</router-link>
+    <router-link to="/shop">商城管理</router-link>
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let NewsComponent={template:"<div>" +
+    "<router-link to='/news/add'>添加新闻</router-link>" +
+    "<router-link to='/news/search'>搜索新闻</router-link>" +
+    "<router-view></router-view></div>"};
+    let NewsAddComponent={template:"<div>" +
+    "<input type='text' placeholder='请输入'>" +
+    "<input type='submit'></div>"};
+    let NewsSearchComponent={template:"<div><table>" +
+    "<tr><td>新闻ID</td><td>新闻标题</td><td>操作</td></tr>" +
+    "<tr><td>1</td><td>aaa</td><td><button>删除</button></td></tr>" +
+    "</table></div>"};
+
+    let ShopComponent={template:"<div>" +
+    "<router-link to='/shop/add'>添加商品</router-link>" +
+    "<router-link to='/shop/search'>搜索商品</router-link>" +
+    "<router-view></router-view></div>"};
+    let ShopAddComponent={template:"<div>" +
+    "<input type='text' placeholder='请输入'>" +
+    "<input type='submit'></div>"};
+    let ShopSearchComponent={template:"<div>商品列表</div>"};
+
+    let NotFoundComponent={template:"<div>404</div>"};
+
+    const routes=[
+        {path:"/",redirect:"/news"},
+        {path:"/news",component:NewsComponent,children:[
+            {path:"add",component:NewsAddComponent},
+            {path:"search",component:NewsSearchComponent}
+        ]},
+        {path:"/shop",component:ShopComponent,children:[
+            {path:"add",component:ShopAddComponent},
+            {path:"search",component:ShopSearchComponent}
+        ]},
+        {path:"*",component:NotFoundComponent},
+    ];
+    const router=new VueRouter({
+        routes
+    });
+
+    const app=new Vue({
+//        el:"#app",
+        router
+    }).$mount("#app");
+</script>
+</body>
+</html>
